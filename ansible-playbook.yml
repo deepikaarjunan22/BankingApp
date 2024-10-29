@@ -6,6 +6,12 @@
     - name: updating apt
       command: sudo apt-get update
 
+    - name: Install maven
+      command: sudo apt-get install maven -y
+
+    -name: Install git
+     command: sudo apt-get install git -y
+
     - name: Install Docker
       command: sudo apt-get install -y docker.io
 
