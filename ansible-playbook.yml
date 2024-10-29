@@ -1,15 +1,15 @@
-- name : Configure Docker on EC2 Instances
-  hosts : samplenode1
-  become: true
-  connection : ssh
-  tasks : 
-  - name: updating apt
-    command : sudo apt-get update
+---
+  - hosts : samplenode1
+    become: true
+    connection: ssh
+    tasks: 
+    - name: updating apt
+      command: sudo apt-get update
 
-  - name : Install Docker
-    command : sudo apt-get install -y docker.io
+    - name: Install Docker
+      command: sudo apt-get install -y docker.io
 
-  - name : Start Docker Service
-    command : sudo systemctl start docker
+    - name: Start Docker Service
+      command: sudo systemctl start docker
 
  
