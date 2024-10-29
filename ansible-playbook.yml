@@ -1,5 +1,5 @@
 ---
-  - hosts : samplenode1
+  - hosts: samplenode1
     become: true
     connection: ssh
     tasks: 
