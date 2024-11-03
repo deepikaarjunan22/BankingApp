@@ -1,5 +1,6 @@
 - name : Configure Docker on EC2 Instances
   hosts : testnodes
+  gather_facts: false
   become: true
   connection : ssh
   tasks : 
